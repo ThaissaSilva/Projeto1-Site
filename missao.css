@@ -1,0 +1,44 @@
+/***** MISSAO *******/
+.missao{
+    display: flex;
+    justify-content: space-around; 
+    align-items: left;
+}
+
+.missao img{
+    display: flex;
+    justify-content: space-around; 
+    align-items: left;
+    margin: 0px 60px 0px 60px;
+}
+
+.texto-missao{
+    color: var(--cor9);
+    max-width:1400px;
+    display: inline-block;
+    margin-block-start: 0;
+    text-align: justify;
+    margin: 0px 60px 60px 0px;
+}
+
+.texto-missao b{
+    color: var(--cor8);
+    font-size: 1.2em;
+}
+
+.missao-container{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;   
+}
+
+.texto-conheca{
+    color: var(--cor3);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto-conheca:hover{
+    text-decoration:underline;
+}

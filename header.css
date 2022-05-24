@@ -1,0 +1,69 @@
+.header{
+    max-width:1400px; 
+    background-color: var(--cor1);
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo{
+    padding: 20px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* TOOLTIP LOGO*/
+.header-options {
+    display: flex; 
+    gap: 20px;
+    width: 100px;
+}
+
+.header-options .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    top: 50px;
+    text-align: center;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.header-options:hover .tooltiptext {
+    visibility: visible;
+}
+
+/******** MENU NAVEGACAO **********/
+.nav{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    height: 40px;
+}
+
+.nav ul{
+    padding: 5px 0;
+    margin: 0px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.nav ul li{
+    display: inline;
+    margin-left: 80px;
+}
+  
+.nav ul li a {
+    color: var(--cor2);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav ul li a:hover {
+    color: var(--cor3);
+}
+

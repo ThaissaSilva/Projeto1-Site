@@ -1,0 +1,62 @@
+/* BANNER*/
+.banner img{
+    position: relative;
+    width: 1400px;
+    height: 100%;
+}
+
+.texto-banner{
+    color: white;
+    text-align: left;
+    padding-left: 40px;
+    position: absolute;
+    top: 180px;
+    left: auto;
+    list-style-type: none;
+}
+
+.texto-banner1{
+    font-size: 48px;
+    padding-bottom: 20px; 
+}
+
+.texto-banner2{
+    font-size: 30px;
+    color: var(--cor4);
+    padding-bottom: 20px;  
+}
+
+.texto-banner3{
+    font-size: 20px;
+}
+
+.banner-container{
+    padding-bottom: 50px;
+}
+
+#btInfo{
+    border-radius: 15px;
+    background-color:var(--cor5);
+    color:var(--cor6);
+    font-weight: bold;
+    border: 1px solid var(--cor5);
+    height: 25px;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#btInfo:hover{
+    background-color: var(--cor7);
+    color: var(--cor8);
+    border: 1px solid var(--cor7);
+}
+
+/******* COMPUTADOR DO BANNER *******/
+.pc{
+    border: 2px solid red;
+    position: absolute;
+    top: 180px;
+    right: 100px;
+    float: none;    
+}

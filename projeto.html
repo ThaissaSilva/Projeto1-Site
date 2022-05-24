@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="missao.css">
+    <link rel="stylesheet" href="equipa.css">
+    <link rel="stylesheet" href="oferta.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,34 +20,34 @@
 </head>
 <body>
 
-    <header class="header">
-        <div>
+    <header>
+        <div class="header">
             <div class="logo">
                 <a href="https://pt.primaverabss.com/pt/"><img src="imagens/logotipo.png"></a>
             </div>
-            <div class="tooltip">
+            <div class="header-options">
                 <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                     <span class="tooltiptext">Pesquisa</span>
                 <i class="fa-regular fa-user fa-1x"></i>
                     <span class="tooltiptext">Login</span>
-            </div>
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="#">CONTABILISTAS</a></li>
-                        <li><a href="#">SETOR PRIVADO</a></li>
-                        <li><a href="#">SETOR PÚBLICO</a></li>
-                        <li><a href="#">FORMAÇÃO</a></li>
-                        <li><a href="#">PARCEIROS</a></li>
-                        <li><a href="#">CARREIRAS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>   
+            </div>  
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">CONTABILISTAS</a></li>
+                    <li><a href="#">SETOR PRIVADO</a></li>
+                    <li><a href="#">SETOR PÚBLICO</a></li>
+                    <li><a href="#">FORMAÇÃO</a></li>
+                    <li><a href="#">PARCEIROS</a></li>
+                    <li><a href="#">CARREIRAS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div>
-        <div class="margin">
+    <section>
+        <div class="banner-container">
             <div class="banner">
                 <img src="imagens/fundoBanner.jpg">
             </div>
@@ -55,57 +61,119 @@
                 <img class="pc"src="imagens/computador.png">
             </div>
         </div> 
-    </div>
+    </section>
    
-    <div class="margin">
+    <section>
         <div class="titulos">
             <p>Missão</p>
         </div>
-        <div class="container">
-            <img src="imagens/missao.jpg">
-            <p>           
-                <p class="texto-missao"><b>Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.</b>
-                    <br/><br/>Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.
-                    <br/><br/> A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.
-                    <br/><br/>Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.
-                    <br/><br/>
-                    <a href="#" class="texto-conheca">Conheça a nossa brochura institucional</a>
-                </p>
-            </p>   
+        <div class="missao">
+            <div class="missao-container">
+                <img src="imagens/missao.jpg">
+                <p>           
+                    <p class="texto-missao"><b>Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.</b>
+                        <br/><br/>Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.
+                        <br/><br/> A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.
+                        <br/><br/>Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.
+                        <br/><br/>
+                        <a href="#" class="texto-conheca">Conheça a nossa brochura institucional</a>
+                    </p>
+                </p>   
+            </div>
         </div>
         <hr/>   
-    </div>
+    </section>
 
-    <div class="margin">
-        <div class="titulos">
-            <p>Equipa</p>
-        </div>
-    </div>
-    <div class="margin">
-        <div class="container-inner">
-            <div class="equipa">
-                <img  src="imagens/foto1.png">
+    <section>
+            <div class="titulos">
+                <p>Equipa</p>
             </div>
-            <div class="equipa">
-                <img src="imagens/foto2.png">
+            <div class="container-inner">
+                <div class="equipa">
+                    <img  src="imagens/foto1.png">
+                </div>
+                <div class="equipa">
+                    <img src="imagens/foto2.png">
+                </div>
+                <div class="equipa">
+                    <img src="imagens/foto3.png">
+                </div>
             </div>
-            <div class="equipa">
-                <img src="imagens/foto3.png">
-            </div>
-        </div>
         <hr/>
-    </div>
-    <div class="margin">
+    </section>
+
+    <section>
         <div class="titulos">
             <p>Oferta formativa</p>
         </div>
-        <div>
+        <div class="oferta">
             <img src="imagens/slider.jpg">
         </div>
-    </div>
-       
+        <div class="texto-oferta">
+            <div class="texto-oferta1">PRIMAVERA Academy</div>
+            <div class="texto-oferta2">Juntos seremos mais fortes!</div>
+            <div class="texto-oferta3">Aposte em novas competências</div>
+        </div>
+    </section>
 
-        
+    <section>
+            <footer>
+                <div class="footer">
+                    <div>
+                        <ul>
+                            <p>PRIMAVERA</p>
+                            <li><a href="#">Sobre a PRIMAVERA</a></li>
+                            <li><a href="#">Responsabilidade Social</a></li>
+                            <li><a href="#">Recrutamento</a></li>
+                            <li><a href="#">Os nossos Clientes</a></li>
+                            <li><a href="#">Referral Members</a></li>
+                            <li><a href="#">Consultoria</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Developers Network</a></li>
+                            <li><a href="#">HelpCenter</a></li>
+                            <li><a href="#">Referral Members</a></li>
+                            <li><a href="#">MarketPlace</a></li>
+                        </ul>                   
+                    </div>
+                    <div>
+                        <ul>
+                            <p>EDUCATION</p>
+                            <li><a href="#">Teaching with Software</a></li>
+                            <li><a href="#">Education Talks</a></li>
+                            <li><a href="#">Education Labs</a></li>
+                            <li><a href="#">Study Visits</a></li>
+                            <li><a href="#">Formação de Docentes</a></li>
+                        </ul>                   
+                    </div>
+                    <div>
+                        <ul>
+                            <p>NOTICIAS E EVENTOS</p>
+                            <li><a href="#">Press Releases</a></li>
+                            <li><a href="#">Eventos e Webinars</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>                   
+                    </div>
+                    <div>
+                        <ul>
+                            <p>CONTACTOS</p>
+                            <li><a href="#">Como Chegar</a></li>
+                            <li><a href="#">Contactar agora</a></li>
+                        </ul>                   
+                    </div>
+                    <div>
+                        <ul>
+                            <p>SITE</p>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Utilização</a></li>
+                            <li><a href="#">Mapa do Site</a></li>
+                        </ul>                   
+                    </div>
+                </div>
+            </footer>            
+    </section>
+       
     <script src="projeto.js"></script>
 </body>
 </html>
