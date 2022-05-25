@@ -1,23 +1,19 @@
 /***** EQUIPA *******/
 .equipa-container{
-    border: 1px solid red;
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.equipa{
+.equipa-imagens{
     margin-right: 30px;
-    margin: 0px 60px 60px 0px;
+    margin-bottom: 60px;  
 }
 
-.equipa img{
+.equipa-imagens img{
     border-radius: 50%;
 }
 
-.equipa img:hover{
+.equipa-imagens img:hover{
     border-radius: 0%;
-}
-.container-inner{
-    display: flex;
-    justify-content: center;
-    width: 100%;   
 }

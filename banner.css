@@ -1,11 +1,15 @@
-/* BANNER*/
+/******* BANNER *******/
+.banner-container{
+    padding-bottom: 50px;
+}
+
 .banner img{
     position: relative;
     width: 1400px;
     height: 100%;
 }
 
-.texto-banner{
+.banner-texto{
     color: white;
     text-align: left;
     padding-left: 40px;
@@ -15,26 +19,22 @@
     list-style-type: none;
 }
 
-.texto-banner1{
+.banner-texto1{
     font-size: 48px;
     padding-bottom: 20px; 
 }
 
-.texto-banner2{
+.banner-texto2{
     font-size: 30px;
     color: var(--cor4);
     padding-bottom: 20px;  
 }
 
-.texto-banner3{
+.banner-texto3{
     font-size: 20px;
 }
 
-.banner-container{
-    padding-bottom: 50px;
-}
-
-#btInfo{
+#banner-btInfo{
     border-radius: 15px;
     background-color:var(--cor5);
     color:var(--cor6);
@@ -46,16 +46,17 @@
     cursor: pointer;
 }
 
-#btInfo:hover{
+#banner-btInfo:hover{
     background-color: var(--cor7);
     color: var(--cor8);
     border: 1px solid var(--cor7);
 }
 
 /******* COMPUTADOR DO BANNER *******/
-.pc{
+.banner-imgpc{
     border: 2px solid red;
     position: absolute;
+    display: flex;
     top: 180px;
     right: 100px;
     float: none;    

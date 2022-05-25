@@ -5,7 +5,7 @@
     margin-bottom: 50px;
 }
 
-.texto-oferta{
+.oferta-texto{
     border: 2px solid red;
     text-align: center;
     position: absolute;
@@ -13,19 +13,19 @@
     right: 650px;
 }
 
-.texto-oferta1{
+.oferta-texto1{
     font-size: 42px;
     color: var(--cor10);
     padding-bottom: 20px;
 }
 
-.texto-oferta2{
+.oferta-texto2{
     font-size: 35px;
     color: var(--cor11);
     padding-bottom: 40px;
 }
 
-.texto-oferta3{
+.oferta-texto3{
     font-size: 26px;
     color: var(--cor11);
 }

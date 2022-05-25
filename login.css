@@ -1,0 +1,83 @@
+.wrapper{
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    bottom: 100%;
+    right: 100%;
+    left: 100%;
+    background-color: red;
+}
+
+.popup{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 400px;
+    padding: 60px 30px;
+    background: var(--cor1);
+    box-shadow: 2px 2px 2px 2px var(--cor12);
+    transition: top 0ms ease-in-out 200ms; 
+    transform: 20ms ease-in-out 0ms;
+    z-index: 10;
+}
+
+.popup .active{
+    top: 50%;
+    opacity: 1;
+    transition: top 0ms ease-in-out 0ms;
+    transform: translate(-50%, -50%) scale(1) opacity 200ms ease-in-out 0ms;
+}
+
+.close-btn{
+    border: 3px solid var(--cor2);
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: 1px 2px 1px 0px var(--cor8);
+    color: var(--cor8);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form h2{
+    text-align: left;
+    margin: -30px 0px 20px 0px;
+    font-size: 25px;    
+}
+
+.form-element{
+    margin: 15px 0px 0px 0px;
+}
+
+.form-element label{
+    font-size: 14px; 
+}
+
+.form-element input[type="text"], .form-element input[type="password"]{
+    margin-top: 10px;
+    width: 80%;
+    padding: 6px;
+    outline: none; /* o que faz? */
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.form-element button{
+    border-radius: 5px;
+    background-color:var(--cor3);
+    color:var(--cor6);
+    border: 1px solid var(--cor3);
+    height: 35px;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    cursor: pointer;
+}
