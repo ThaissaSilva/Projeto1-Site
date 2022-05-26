@@ -9,12 +9,72 @@
     align-items: center;
 }
 
+/****** COOKIE ********/
+.header-cookie{
+    background-color: var(--cor6);
+    color: var(--cor14);
+    height: 50px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cookie a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.header-cookie a:hover{
+    text-decoration:underline;
+}
+
+#header-btInfo{
+    border-radius: 15px;
+    background-color:var(--cor5);
+    color:var(--cor6);
+    font-weight: bold;
+    border: 1px solid var(--cor5);
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    letter-spacing: 1px;
+    float: right;
+    margin-left: 50px;
+}
+
+.header-btInfo:hover{
+    background-color: var(--cor5);
+    color: var(--cor5);
+    border: 2px solid var(--cor5);
+}
+
+.header-cookie-shadow{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 9;
+    /*opacity: 0;*/
+    display: none;
+}
+
+.header-cookie-shadow.active{  
+    /*opacity: 1;*/
+    display: block;
+}
+
+/****** LOGO ********/
 .header-logo{
     padding: 20px 10px;
     text-align: left;
+    cursor: pointer;
 }
 
-/* TOOLTIP LOGO*/
+/******* TOOLTIP LOGO ********/
 .header-options {
     display: flex; 
     gap: 20px;

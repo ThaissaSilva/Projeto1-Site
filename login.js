@@ -9,3 +9,7 @@ document.querySelector(".close-btn").addEventListener("click", function(){
 });
 
 
+//imagens EQUIPA
+
+
+

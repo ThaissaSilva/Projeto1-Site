@@ -3,44 +3,31 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: -60px;
 }
 
 .equipa-imagens{
-    border: 1px solid red;
     margin-right: 30px;
-    margin-bottom: 60px;  
+    margin-bottom: 50px;
 }
 
 .equipa-imagens img{
-    border: 1px solid red;
     border-radius: 50%;
     opacity: 1;
     transition: opacity 1s;
 }
 
 .equipa-imagens img:hover{
-    border-radius: 0%; 
+    border-radius: 0%;
 }
 
 .equipa-transicao{
-    border: 1px solid red;
     opacity: 1;
     position:relative;
     top: 300px;
     text-align: center;
     background-color: rgba(18, 18, 18, 0.5);
     color: var(--cor1);
-    margin-top: -100px;
-}
-
-.equipa-transicao :hover{
-    border: 1px solid red;
-    position:relative;
-    top: 300px;
-    text-align: center;
-    background-color: rgba(18, 18, 18, 0.5);
-    color: var(--cor1);
-    margin-top: -100px;
 }
 
 .equipa-Nome{

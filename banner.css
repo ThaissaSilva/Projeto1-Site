@@ -1,6 +1,8 @@
 /******* BANNER *******/
 .banner-container{
-    padding-bottom: 50px;
+    display: flex;
+    width: 100%;
+    padding-bottom: 40px;
 }
 
 .banner img{
@@ -54,10 +56,9 @@
 
 /******* COMPUTADOR DO BANNER *******/
 .banner-imgpc{
-    border: 2px solid red;
-    position: absolute;
-    display: flex;
-    top: 180px;
-    right: 100px;
-    float: none;    
+    position: relative;
+    bottom: -241px;
+    left: -393px;
+    align-items: flex-end;
+    justify-content: right;
 }

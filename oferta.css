@@ -1,16 +1,17 @@
 .oferta img{
-    position: relative;
     width: 1400px;
     height: 100%;
     margin-bottom: 50px;
 }
 
 .oferta-texto{
-    border: 2px solid red;
     text-align: center;
-    position: absolute;
-    top: 1980px;
-    right: 650px;
+    display:block;
+    position: relative;
+    bottom: 460px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .oferta-texto1{
