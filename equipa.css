@@ -3,12 +3,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: -60px;
+    margin-top: 0px;
+    margin-bottom: -30px;
 }
 
 .equipa-imagens{
     margin-right: 30px;
-    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
 }
 
 .equipa-imagens img{
@@ -22,17 +24,23 @@
 }
 
 .equipa-transicao{
-    opacity: 1;
+    opacity: 0;
     position:relative;
-    top: 300px;
+    bottom: 90px;
     text-align: center;
     background-color: rgba(18, 18, 18, 0.5);
     color: var(--cor1);
+    border: 10px;
+    padding-bottom: 15px;
 }
 
 .equipa-Nome{
     font-size: 125%;
     font-weight: bold;
+}
+
+.equipa-ruiva:hover + .equipa-transicao {
+    opacity: 1;
 }
 
 

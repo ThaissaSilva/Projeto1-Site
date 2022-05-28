@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="oferta.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="telefone.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -22,22 +23,28 @@
     <title>PRIMAVERA Business Software Solutions</title>
 </head>
 <body>
-    <header class=".header-cookie-shadow">
-        <div class="header-cookie">
-            <span>Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os <a href="#">Termos e Condições.</a></span>
-        </div>
-        <div>
-            <input type="button" id="header-btInfo" value="LI E ACEITO >">
-        </div>
+    <header>
+      <div class="header-cookie-shadow">
+        <div class="header-cookie-container">
+          <div class="header-cookie">
+              <span>Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os <a href="#">Termos e Condições.</a></span>
+          </div>
+          <input type="button" id="header-btInfo" value="LI E ACEITO >" />
+      </div>
+      </div>
         <div class="header">
             <div class="header-logo">
                 <a href="https://pt.primaverabss.com/pt/"><img src="imagens/logotipo.png" alt="logo primaverabss"></a>
             </div>
-            <div class="header-options">
+            <div class="header-icons">
+              <div class="header-options">
                 <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                 <span class="header-options-text">Pesquisa</span>
-                <i class="fa-regular fa-user fa-1x"></i>
-                <span class="header-options-text">Login</span>
+              </div>
+              <div class="header-options" id="login">
+                  <i class="fa-regular fa-user fa-1x"></i>
+                  <span class="header-options-text">Login</span>
+              </div>
             </div>
         </div>
         <div class="header-menu">
@@ -53,6 +60,26 @@
             </nav>
         </div>
     </header>
+    <section>
+        <div class="wrapper"></div>
+            <div class="popup">
+                <div class="close-btn">X</div>
+                <div class="form">
+                    <h2>Controlo de acessos</h2>
+                    <div class="form-element">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" placeholder="Enter senha">
+                    </div>
+                    <div class="form-element">
+                        <button>Validar</button>
+                    </div>
+                </div>
+            </div>
+    </section>
     <section>
         <div class="banner-container">
             <div class="banner">
@@ -76,7 +103,7 @@
         </div>
         <div class="telefone-numero">
             <p>919 204 462</p>
-        </div>           
+        </div>      
     </section>
     <section>
         <div class="titulos">
@@ -112,26 +139,26 @@
         </div>
         <div class="equipa-container">
             <div class="equipa-imagens">
+                <img src="imagens/foto1.png" alt="mulher ruiva" class="equipa-ruiva">
                 <div class="equipa-transicao">
-                    <h2 class="equipa-Nome">Manuela Ribeiro</h2>
-                    <spam>Front-end developer</spam>
+                  <h2 class="equipa-Nome">Manuela Ribeiro</h2>
+                  <spam>Front-end developer</spam>
                 </div>
-                <img src="imagens/foto1.png" alt="mulher ruiva">
             </div>
             <div class="equipa-imagens">
+                <img src="imagens/foto2.png" alt="mulher ruiva" class="equipa-ruiva">
                 <div class="equipa-transicao">
-                    <h2 class="equipa-Nome">Manuela Ribeiro</h2>
-                    <spam>Front-end developer</spam>
+                  <h2 class="equipa-Nome">Manuela Ribeiro</h2>
+                  <spam>Front-end developer</spam>
                 </div>
-                <img src="imagens/foto2.png" alt="mulher morena">
             </div>
             <div class="equipa-imagens">
+                <img src="imagens/foto3.png" alt="mulher ruiva" class="equipa-ruiva">
                 <div class="equipa-transicao">
-                    <h2 class="equipa-Nome">Manuela Ribeiro</h2>
-                    <spam>Front-end developer</spam>
+                  <h2 class="equipa-Nome">Manuela Ribeiro</h2>
+                  <spam>Front-end developer</spam>
                 </div>
-                <img src="imagens/foto3.png" alt="mulher loira">
-            </div>
+            </div>            
         </div>
         <hr/>
     </section>
@@ -140,33 +167,15 @@
             <p>Oferta formativa</p>
         </div>
         <div class="oferta">
-            <img src="imagens/slider.jpg" alt="homem sorrindo">
-        </div>
-        <div class="oferta-texto">
-            <div class="oferta-texto1">PRIMAVERA Academy</div>
-            <div class="oferta-texto2">Juntos seremos mais fortes!</div>
-            <div class="oferta-texto3">Aposte em novas competências</div>
-        </div>
-    </section>
-    <section>
-        <div class="wrapper"></div>
-            <div class="popup">
-                <div class="close-btn">X</div>
-                <div class="form">
-                    <h2>Controlo de acessos</h2>
-                    <div class="form-element">
-                        <label for="email">E-mail:</label>
-                        <input type="text" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="form-element">
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" placeholder="Enter senha">
-                    </div>
-                    <div class="form-element">
-                        <button>Validar</button>
-                    </div>
-                </div>
+            <div>
+                <img src="imagens/slider.jpg" alt="homem sorrindo">
             </div>
+            <div class="oferta-texto">
+                <div class="oferta-texto1">PRIMAVERA Academy</div>
+                <div class="oferta-texto2">Juntos seremos mais fortes!</div>
+                <div class="oferta-texto3">Aposte em novas competências</div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer">
