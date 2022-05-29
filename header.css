@@ -8,73 +8,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  /****** COOKIE ********/
-  .header-cookie {
-    background-color: var(--cor6);
-    color: var(--cor14);
-    height: 50px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .header-cookie a {
-    color: var(--cor3);
-    text-decoration: none;
-  }
-  
-  .header-cookie a:hover {
-    text-decoration: underline;
-  }
-  
-  .header-cookie-shadow.header-cookie-hide {
-    display: none;
-  }
-  
-  #header-btInfo {
-    border-radius: 15px;
-    background-color: var(--cor5);
-    color: var(--cor6);
-    font-weight: bold;
-    border: 1px solid var(--cor5);
-    height: 30px;
-    width: 150px;
-    text-align: center;
-    letter-spacing: 1px;
-    float: right;
-    margin-left: 50px;
-  }
-  
-  #header-btInfo:hover {
-    background-color: var(--cor6);
-    color: var(--cor5);
-    border: 2px solid var(--cor5);
-    cursor: pointer;
-  }
-  .header-cookie-container {
-    display: flex;
-    background-color: var(--cor6);
-    align-items: center;
-    justify-content: center;
-  }
-  .header-cookie-shadow {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9;
-  }
-  
-  .header-cookie-shadow.active {
-    /*opacity: 1;*/
-    display: block;
-  }
-  
+   
   /****** LOGO ********/
   .header-logo {
     padding: 20px 10px;
@@ -84,17 +18,27 @@
   
   /******* TOOLTIP LOGO ********/
   .header-icons {
-      display: flex;
-      width: 100px;
+    display: flex;
+    width: 20rem;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 25px;
   }
   
   .header-options {
-    display: flex;
-    gap: 20px;
-    width: 100px;
     cursor: pointer;
+    display: none;
   }
-  
+
+  .header-options.pesquisa{
+    display: flex;
+  }
+
+  .header-options.active{
+    display: flex;
+  }
+
   .header-options .header-options-text {
     visibility: hidden;
     width: 120px;
@@ -139,5 +83,6 @@
   .header-menu ul li a:hover {
     color: var(--cor3);
   }
+
   
 

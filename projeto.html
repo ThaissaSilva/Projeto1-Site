@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="projeto.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="cookie.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="missao.css">
     <link rel="stylesheet" href="equipa.css">
@@ -24,31 +25,21 @@
 </head>
 <body>
     <header>
-      <div class="header-cookie-shadow">
-        <div class="header-cookie-container">
-          <div class="header-cookie">
-              <span>Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os <a href="#">Termos e Condições.</a></span>
-          </div>
-          <input type="button" id="header-btInfo" value="LI E ACEITO >" />
-      </div>
-      </div>
         <div class="header">
             <div class="header-logo">
                 <a href="https://pt.primaverabss.com/pt/"><img src="imagens/logotipo.png" alt="logo primaverabss"></a>
             </div>
             <div class="header-icons">
-              <div class="header-options">
-                  <p>Bem vindo(a), Thaissa </p>
-                <i class="fa-solid fa-magnifying-glass fa-1x"></i>
-                <span class="header-options-text">Pesquisa</span>
-              </div>
-              <!--
-                  <div class="header-options" id="login">
-                      <i class="fa-regular fa-user fa-1x"></i>
-                      <span class="header-options-text">Login</span>
-                  </div>
-              -->
-                <div class="header-options" id="logout">
+                <p id="texto-bemvindo"></p>
+                <div class="header-options pesquisa">
+                    <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+                    <span class="header-options-text">Pesquisa</span>
+                </div>
+                <div class="header-options active" id="login">
+                    <i class="fa-regular fa-user fa-1x"></i>
+                    <span class="header-options-text">Login</span>
+                </div>
+                <div class="header-options" id="logout" onclick="logout()">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span class="header-options-text">Logout</span>
                 </div>
@@ -68,6 +59,16 @@
         </div>
     </header>
     <section>
+        <div class="cookie-shadow">
+            <div class="cookie-container">
+              <div class="cookie">
+                  <span>Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os <a href="#">Termos e Condições.</a></span>
+              </div>
+              <input type="button" id="btInfo" value="LI E ACEITO >" />
+            </div>
+          </div>
+    </section>
+    <section>
         <div class="wrapper"></div>
             <div class="popup">
                 <div class="close-btn">X</div>
@@ -76,11 +77,11 @@
                     <p id="erros"></p>
                     <div class="form-element">
                         <label for="email">E-mail:</label>
-                        <input type="text" id="email" placeholder="Enter email">
+                        <input type="text" id="email" placeholder="Enter email" onkeypress="logarEnter(event)">
                     </div>
                     <div class="form-element">
                         <label for="senha">Senha:</label>
-                        <input type="password" id="senha" placeholder="Enter senha">
+                        <input type="password" id="senha" placeholder="Enter senha" onkeypress="logarEnter(event)">
                     </div>
                     <div class="form-element">
                         <button onclick="logar()">Validar</button>
@@ -242,6 +243,5 @@
     </footer>
 
     <script src="projeto.js"></script>
-    <script src="login.js"></script>
 </body>
 </html>

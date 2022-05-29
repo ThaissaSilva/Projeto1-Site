@@ -1,0 +1,16 @@
+{
+    "utilizadores" : [
+        {
+            "id": 1,
+            "email": "thaissasena.ts@gmail.com",
+            "senha": "12345",
+            "nome": "Thaissa Silva"
+        },
+        {
+            "id": 2,
+            "email": "premoaldo@gmail.com",
+            "senha": "1234aa",
+            "nome": "Pedro Remoaldo"
+        }     
+    ]
+}
