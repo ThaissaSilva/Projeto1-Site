@@ -38,13 +38,20 @@
             </div>
             <div class="header-icons">
               <div class="header-options">
+                  <p>Bem vindo(a), Thaissa </p>
                 <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                 <span class="header-options-text">Pesquisa</span>
               </div>
-              <div class="header-options" id="login">
-                  <i class="fa-regular fa-user fa-1x"></i>
-                  <span class="header-options-text">Login</span>
-              </div>
+              <!--
+                  <div class="header-options" id="login">
+                      <i class="fa-regular fa-user fa-1x"></i>
+                      <span class="header-options-text">Login</span>
+                  </div>
+              -->
+                <div class="header-options" id="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="header-options-text">Logout</span>
+                </div>
             </div>
         </div>
         <div class="header-menu">
@@ -66,6 +73,7 @@
                 <div class="close-btn">X</div>
                 <div class="form">
                     <h2>Controlo de acessos</h2>
+                    <p id="erros"></p>
                     <div class="form-element">
                         <label for="email">E-mail:</label>
                         <input type="text" id="email" placeholder="Enter email">
@@ -75,7 +83,7 @@
                         <input type="password" id="senha" placeholder="Enter senha">
                     </div>
                     <div class="form-element">
-                        <button>Validar</button>
+                        <button onclick="logar()">Validar</button>
                     </div>
                 </div>
             </div>
