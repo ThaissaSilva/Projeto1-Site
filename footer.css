@@ -16,6 +16,7 @@
 .footer ul{
     list-style-type: none;
     text-align: left;
+    margin-right: 20px;
 }
 
 .footer ul li{   
@@ -31,4 +32,12 @@
 
 .footer ul li a:hover{
     text-decoration:underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer{
+        width: 1400px;
+        align-items: center;
+        flex-flow: column;
+    }
 }

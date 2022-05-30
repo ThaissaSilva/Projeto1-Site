@@ -21,6 +21,7 @@
 body {
     font-family: var(--fonte-padrao);
     max-width:1400px;
+    min-width:1400px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -38,6 +39,26 @@ hr{
     margin-bottom: 20px;
     max-width:1400px;
     text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+    body {
+        max-width:auto;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    hr{
+        display: flex;
+        width: 1400px;
+        height: 100%;
+    }
+
+    .titulos{
+        display: block;
+        width: 1400px;
+        text-align: center;
+    }
 }
 
 

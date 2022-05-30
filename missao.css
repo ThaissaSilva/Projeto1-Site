@@ -42,3 +42,23 @@
 .missao-texto-conheca:hover{
     text-decoration:underline;
 }
+
+@media only screen and (max-width: 800px) {
+    .missao{
+        width: 1400px;
+        align-items: center;
+    }
+
+    .missao-texto{
+        font-size:larger;
+        text-align:left;
+        padding-left: 50px;
+    }
+
+    .missao-container{
+        flex-flow: column;
+        align-items: center;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}

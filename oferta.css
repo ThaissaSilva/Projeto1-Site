@@ -34,3 +34,10 @@
     font-size: 26px;
     color: var(--cor11);
 }
+
+@media only screen and (max-width: 800px) {
+    .oferta{
+        width: 1400px;
+        align-items: center;
+    }
+}
